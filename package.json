@@ -1,0 +1,20 @@
+{
+  "name": "sussurros",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.9",
+    "dotenv": "^16.4.5",
+    "hapi": "^18.1.0",
+    "knex": "^3.1.0",
+    "objection": "^3.1.4",
+    "pg": "^8.11.5"
+  }
+}

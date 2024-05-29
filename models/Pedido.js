@@ -12,7 +12,7 @@ class Pedido extends Model {
     static get relationMappings() {
         const Cliente = require('./Cliente');
         const ItemPedido = require('./ItemPedido');
-        
+
         return {
             cliente: {
                 relation: Model.BelongsToOneRelation,

@@ -10,24 +10,24 @@ class ItemPedido extends Model {
     }
 
     static get relationMappings() {
-        const Produto = require('./Produto');
         const Pedido = require('./Pedido');
+        const Produto = require('./Produto');
 
         return {
-            produto: {
-                relation: Model.BelongsToOneRelation,
-                modelClass: Produto,
-                join: {
-                    from: 'itens_pedido.produto_id',
-                    to: 'produtos.id'
-                }
-            },
             pedido: {
                 relation: Model.BelongsToOneRelation,
                 modelClass: Pedido,
                 join: {
                     from: 'itens_pedido.pedido_id',
                     to: 'pedidos.id'
+                }
+            },
+            produto: {
+                relation: Model.BelongsToOneRelation,
+                modelClass: Produto,
+                join: {
+                    from: 'itens_pedido.produto_id',
+                    to: 'produtos.id'
                 }
             }
         };
